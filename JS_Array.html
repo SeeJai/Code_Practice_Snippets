@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var text = "Hello User";
+            var array = ["Apple", "Banana", "Custard"];
+            document.write(array[0]+"<br>");
+            document.writeln(array.length);
+            document.write(array[1]+"<br>");
+            document.write(text[1]+text[5]+"<br>")
+            document.write("============================="+"<br>")
+
+            var car =[]
+            car[0]="BMW";
+            car[1]="Audi"
+            car[2]="Tata"
+            document.write(car+ "<br>")
+            document.write("============================="+"<br>")
+
+            car[1]="Skoda"
+            document.write(car+ "<br>")
+            document.write("============================="+"<br>")
+
+            car[10]="Benz"
+            document.write(car+ "<br>")
+            document.write("============================="+"<br>")
+
+            car.push("Lamborghini")
+            document.write(car+ "<br>")
+            document.write("============================="+"<br>")
+
+            car.pop()
+            document.write(car+ "<br>")
+            document.write("============================="+"<br>")
+            
+            car.pop()
+            document.write(car+ "<br>")
+            document.write("============================="+"<br>")
+
+            var vegetables = new Array("cabbage","lettuce","broccolie")
+            document.write(vegetables+ "<br>")
+            document.write("============================="+"<br>")
+
+            var details = {"name":"Amal", "age":24, "gender":"Male", "job":"IT Intern", 10000:"salary"}
+            document.write(details.name+"<br>")
+            document.write(details["age"]+"<br>")
+            document.write("============================="+"<br>")
+
+            for(var i=0;i<array.length; i++){
+                document.write(array[i]+"<br>")
+            }
+            document.write("============================="+"<br>")
+
+            array.forEach(function(val){
+                document.write(val+"<br>")
+            })
+            document.write("============================="+"<br>")
+
+            for(var x in details){
+                document.write(x +":"+ details[x]+"<br>")
+            }
+            document.write("============================="+"<br>")
+        </script>
+    </body>
+</html>
