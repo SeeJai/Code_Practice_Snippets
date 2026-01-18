@@ -20,31 +20,38 @@
             car[1]="Audi"
             car[2]="Tata"
             document.write(car+ "<br>")
-            document.write("============================="+"<br>")
 
             car[1]="Skoda"
             document.write(car+ "<br>")
-            document.write("============================="+"<br>")
 
             car[10]="Benz"
             document.write(car+ "<br>")
-            document.write("============================="+"<br>")
 
             car.push("Lamborghini")
             document.write(car+ "<br>")
-            document.write("============================="+"<br>")
 
             car.pop()
             document.write(car+ "<br>")
-            document.write("============================="+"<br>")
             
             car.pop()
+            document.write(car+ "<br>")
+
+            car.shift()
+            document.write(car+"<br>")
+
+            car.unshift("Maruti")
+            document.write(car+ "<br>")
+
+            delete car[1]
             document.write(car+ "<br>")
             document.write("============================="+"<br>")
 
             var vegetables = new Array("cabbage","lettuce","broccolie")
             document.write(vegetables+ "<br>")
+            document.write("toString: " + vegetables.toString()+ "<br>")
+            document.write("join: " + vegetables.join("/")+ "<br>")
             document.write("============================="+"<br>")
+
 
             var details = {"name":"Amal", "age":24, "gender":"Male", "job":"IT Intern", 10000:"salary"}
             document.write(details.name+"<br>")
